@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Kelisto</title>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 
   <div class="container">
     <header class="header">
+      <span class="hamburger-menu" style=" onclick="openNav()">&#9776;</span>
     </header> <!-- end of header -->
 
-    <main class="main-body">
+    <main class="main">
       <div class="welcome">
         <h2>Hello, my friend to our product</h2>
         <h3>Hello, my friend to our product</h3>
@@ -46,18 +55,15 @@
   </footer>
 
 
-<script type="text/javascript">$("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});</script>
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
 </html>
