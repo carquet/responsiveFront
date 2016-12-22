@@ -4,6 +4,8 @@ html, body {
   box-sizing: border-box; 
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  height: 100%;
   font-size: 16px;
 }
 
@@ -13,72 +15,121 @@ html, body {
 }
   .header{
     background-color: #d8d8d8;
-    font-size: 1.5rem;
-    font-weight: 600;
     text-align: center;
     width: 100%;
     height: 50px;
   }
 
+  nav {
+  width: 300px;
+  position: absolute;
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+  }
+  nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 
+
+
+/*MOBILE FIRST DESIGN SMALL DEVICE MIN WIDTH 320px*/
+@media screen and (max-width: 320px){
+  
 /*BODY*/
 
-main{
-  background-color: #efefef;
-  width: 100%;
-  text-align: center;
-  font-size: 0.5rem;
-}
-  .welcome{
-    margin: 15%;
+  main{
+    background-color: #efefef;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
   }
+    .welcome{
+      padding:10%;
+    }
 
-  h2 {
-    color: 
-  }
+    h2 {
+      color: 
+    }
 
-  h3 {
-    color: #b0b0b0;
-  }
+    h3 {
+      color: #b0b0b0;
+    }
 
-  button{
-    margin-top: 10%;
-    background-color: #d8d8d8;
-    color: #fff;
-    width: 70%;
-  }
+    button{
+      margin: 5%;
+      padding: 1.5em;
+      width: 70%;
+      background-color: #d8d8d8;
+      color: #fff;
+      
+    }
 
 /*  PRODUCT AREA*/
 
-.product-container {
-  width: 100%;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
+  .product-container {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .product{
+      width: 48%;
+      height: 150px;
+      margin: 1%;
+      background-color: #efefef;
+    }
+
+/* FOOTER*/
+
+  footer{
+    background-color: #464646;
+    height: 150px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+    }
+
+      .footer-text{
+        display: inline;
+      }
+
+  #sidebar-wrapper {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: -10px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #f7f8fa;
+  border-right: : 1px solid #dbdee0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  left: 0;
+  position: fixed;
+  width: 300px;
+  margin-left: -300px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-  .product{
-    width: 46%;
-    height: 150px;
-    margin: 2%;
+#sidebar-wrapper.active {
+  left: 300px;
+  width: 300px;
+}
 
-    background-color: #efefef;
-  }
+#menu-close {
+  padding: 7px 0;
+}
 
- /* FOOTER*/
+#menu-close img {
+  width: 10px;
+}
 
-footer{
-  background-color: #464646;
-  height: 150px;
-  font-size: 0.8rem;
-  border-bottom: 1px solid #979797;
-  border-top: 1px solid #979797;
-  }
-
-  
-
-    .footer-text{
-      display: inline;
-    }
+}

@@ -7,6 +7,7 @@
     <title>Kelisto</title>
 </head>
 <body>
+
   <div class="container">
     <header class="header">
     </header> <!-- end of header -->
@@ -18,19 +19,18 @@
         <button>BUTTON ONE</button>
       </div>
     </main>
-</div>
-
-
-  <div class="product-container">
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
-    <article class="product"></article>
   </div>
+
+  <section class="product-container">
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+    <article class="product"></article>
+  </section>
 
 
   <footer>
@@ -46,5 +46,18 @@
   </footer>
 
 
+<script type="text/javascript">$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
 </html>
