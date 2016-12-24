@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
@@ -18,7 +18,7 @@
 
   <div class="container">
     <header class="header">
-      <span class="hamburger-menu" style=" onclick="openNav()">&#9776;</span>
+      <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
     </header> <!-- end of header -->
 
     <main class="main">
@@ -57,7 +57,7 @@
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "150px";
 }
 
 function closeNav() {
