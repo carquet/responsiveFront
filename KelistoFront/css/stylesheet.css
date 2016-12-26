@@ -1,6 +1,5 @@
 html, body {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  
   box-sizing: border-box; 
   margin: 0;
   padding: 0;
@@ -66,6 +65,34 @@ html, body {
       background-color: #efefef;
     }
 
+/**************FOOTER******************/
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #464646;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+    }
+
+     .footer-list {
+        width: 100%;
+        padding: 0;    /*to remove the webkit padding starter*/
+        padding-top: 5%;
+        text-align: center;
+        
+      }
+
+        .footer-text {
+          display: inline;
+          color: white;
+          padding: 3%;
+        }
 
 /*----------------------TABLET MEDIUM DEVICE 780max----------------*/
 @media screen and (max-width: 780px) {
@@ -78,6 +105,18 @@ html, body {
       width: 22%;
       margin: 1%;
     }
+
+
+  .footer-list-wrapper {
+        margin-top: 3%;
+      }
+        .about-us-list {
+          display: list-item;
+        }
+
+        .footer-text {
+          padding: 1%;
+        }
 
 }
 
@@ -144,13 +183,7 @@ html, body {
 
 /* FOOTER*/
 
-  footer {
-    background-color: #464646;
-    height: 150px;
-    font-size: 0.8rem;
-    border-bottom: 1px solid #979797;
-    border-top: 1px solid #979797;
-    }
+
 
      .footer-list-wrapper {
         margin-top: 15%;
