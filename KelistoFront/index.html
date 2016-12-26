@@ -8,28 +8,31 @@
     <title>Kelisto</title>
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+<!-- Beginning of navigation bar menu sliding from the right -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+    <a href="#">Menu text</a>
+    <a href="#">Menu text</a>
+    <a href="#">Menu text</a>
+    <a href="#">Menu text</a>
+  </div> <!-- end of navigation bar menu -->
 
-  <div class="container">
-    <header class="header">
-      <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
-    </header> <!-- end of header -->
 
-    <main class="main">
-      <div class="welcome">
-        <h2>Hello, my friend to our product</h2>
-        <h3>Hello, my friend to our product</h3>
-        <button>BUTTON ONE</button>
-      </div>
-    </main>
-  </div>
+  <header class="header"><!-- beginning of header -->
+    <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
+  </header> <!-- end of header -->
 
+<!-- main content area -->
+  <main class="main">
+    <div class="welcome">
+      <h2>Hello, my friend to our product</h2>
+      <h3>Hello, my friend to our product</h3>
+      <button>BUTTON ONE</button>
+    </div>
+  </main> <!-- end of main content area -->
+ 
+
+<!-- product showcase area -->
   <section class="product-container">
     <article class="product"></article>
     <article class="product"></article>
@@ -39,25 +42,31 @@
     <article class="product"></article>
     <article class="product"></article>
     <article class="product"></article>
-  </section>
+  </section><!--  end of product showcase -->
 
-
-  <footer>
-    <ul class="footer-list">
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-      <li class="footer-text">Footer Text</li>
-    </ul>
-  </footer>
+<!-- footer area -->
+    <footer>
+      <div class="container footer-list-wrapper">
+        <ul class="about-us-list list">
+          <li class="footer-text">About us 1</li>
+          <li class="footer-text">About us 2</li>
+          <li class="footer-text">About us 3</li>
+        </ul>
+        <ul class="extra-info list">
+          <li class="footer-text">Extra info 1</li>
+          <li class="footer-text">Extra info 2</li>
+          <li class="footer-text">Extra info 3</li>
+        </ul>
+        <ul class="contact list">
+          <li class="footer-text">Contact</li>
+        </ul>
+      </div>
+    </footer>
 
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("mySidenav").style.width = "200px";
 }
 
 function closeNav() {
