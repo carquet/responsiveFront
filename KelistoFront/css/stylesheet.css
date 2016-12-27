@@ -24,6 +24,10 @@ html, body {
   .sidenav a {font-size: 18px;}
 }
 
+/*********NAVIGATION BAR*************/
+.hamburger-menu {
+  display: none;
+}
 /*************BODY*******************/
 
   main {
