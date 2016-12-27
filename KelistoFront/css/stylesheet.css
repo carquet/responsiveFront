@@ -22,10 +22,6 @@ html, body {
 
  
 
-
-
-
-
 /*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
 
 @media all and (min-width: 0px) {
@@ -40,13 +36,13 @@ html, body {
     right: 0;
     background-color: #d8d8d8;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.2s;
     padding-top: 60px;
 
   }
 
     .sidenav a {
-        padding: 2% 2% 2% 30%;
+        padding: 2% 10% 2% 30%;
         text-decoration: none;
         font-size: 1.5em;
         color: #fff;
@@ -91,7 +87,7 @@ html, body {
       font-size: 1rem;
   }
       .welcome {
-        padding: 10%;
+        padding: 15%;
       }
 
       h3 {
@@ -107,9 +103,21 @@ html, body {
       }
 
 /*******PRODUCT AREA  SMALL DEVICE*********/
+
+    .product-container {
+      width: 100%;
+      height: 50%;
+      margin-top: 3%;
+      margin-bottom: 5%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .product {
       width: 47%;
-      margin: 0.5%;
+      height: 150px;
+      margin: 1%;
+      background-color: #efefef;
     }
 
 /* FOOTER*/
@@ -130,13 +138,44 @@ html, body {
 /*----------------------TABLET MEDIUM DEVICE 780max----------------*/
 @media all and (min-width: 321px) {
 
+  /*********NAVIGATION BAR*************/
+  .hamburger-menu {
+    display: none;
+  }
+
+  .closebtn {
+    display: none;
+  }
+
+  .sidenav {
+      position:static;
+      height: 2px;
+      width:  100%;
+      overflow-x: visible;
+      text-align: left;
+      padding-top: 15px;
+      transition: none;
+
+    }
+
+      .sidenav a {
+          margin-top: 15px;
+          padding: 0.5em;
+          font-size: 0.8em;
+          color: #fff;
+          display: inline;
+          transition: none;   
+      }
+
   /******** PRODUCT AREA MEDIUM DEVICES********/
   .product-container {
     width: 100%;
+    
   }
     .product {
-      width: 22%;
-      margin: 1%;
+      width: 20%;
+      height: 150px;
+      padding: 1%;
     }
 
 
@@ -156,33 +195,35 @@ html, body {
 
 /*-------------------------------DESKTOP VIEW---------------------*/
 @media all and (min-width: 780px) {
-/*********NAVIGATION BAR*************/
-.hamburger-menu {
-  display: none;
-}
+
+  .sidenav a {
+          font-size: 1.2em; 
+      }
+
 /*************BODY*******************/
 
   main {
     text-align: left;
+    height: 55%;
+    font-size: 1.5rem;
   }
+
+    .welcome {
+      padding-top: 10%;
+    }
     button {
       width: 25%;
     }
 /***************PRODUCT AREA*************/
 
 .product-container {
-    width: 75%;
-    padding-top: 3%;
-    padding-bottom: 5%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+   
   }
 
     .product {
-      width: 15%;
-      height: 150px;
-      margin: 2%;
+      width: 16%;
+      height: 200px;
       background-color: #efefef;
     }
 
