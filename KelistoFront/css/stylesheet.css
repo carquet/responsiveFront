@@ -138,7 +138,7 @@ html, body {
 /*----------------------TABLET MEDIUM DEVICE 780max----------------*/
 @media all and (min-width: 321px) {
 
-  /*********NAVIGATION BAR*************/
+  /*********NAVIGATION BAR***********/
   .hamburger-menu {
     display: none;
   }
@@ -211,9 +211,11 @@ html, body {
     .welcome {
       padding-top: 10%;
     }
+
     button {
       width: 25%;
     }
+
 /***************PRODUCT AREA*************/
 
 .product-container {
