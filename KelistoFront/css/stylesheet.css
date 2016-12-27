@@ -20,7 +20,12 @@ html, body {
     height: 50px;
   }
 
- 
+ .wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+ }
+
+
 
 /*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
 
@@ -122,15 +127,29 @@ html, body {
 
 /* FOOTER*/
 
-     .footer-list-wrapper {
-        margin-top: 15%;
-      }
+    .push {   /*stick the footer to the bottom of the the screen*/
+      height: 60px;
+    }
 
-        .list {
-          display: inline-block;
-          list-style: none;
-          margin-bottom: 0;
+     footer {
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      background-color: #464646;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #979797;
+      border-top: 1px solid #979797;
+      
+    }
+        .footer-list-wrapper {
+          display: flex;
+          flex-wrap: wrap;
         }
+
+          .footer-list {
+            list-style: none;
+            color: #fff;
+          }
 
   
 }
@@ -178,17 +197,34 @@ html, body {
       padding: 1%;
     }
 
+/************FOOTER MEDIUM DEVICES************/
 
-  .footer-list-wrapper {
-        margin-top: 3%;
+  /*footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #464646;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+    }
+
+     .footer-list {
+        width: 100%;
+        padding: 0;  */  /*to remove the webkit padding starter*/
+        /*padding-top: 5%;
+        text-align: center;
+        
       }
-        .about-us-list {
-          display: list-item;
-        }
 
         .footer-text {
-          padding: 1%;
-        }
+          display: inline;
+          color: white;
+          padding: 3%;
+        }*/
 
 }
 
@@ -231,7 +267,7 @@ html, body {
 
 /**************FOOTER******************/
 
-footer {
+/*footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -246,8 +282,8 @@ footer {
 
      .footer-list {
         width: 100%;
-        padding: 0;    /*to remove the webkit padding starter*/
-        padding-top: 5%;
+        padding: 0;*/    /*to remove the webkit padding starter*/
+        /*padding-top: 5%;
         text-align: center;
         
       }
@@ -256,5 +292,5 @@ footer {
           display: inline;
           color: white;
           padding: 3%;
-        }
+        }*/
 }
