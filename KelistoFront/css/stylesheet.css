@@ -13,17 +13,149 @@ html, body {
   flex-wrap: wrap;
 }
   .header {
+    position: absolute;
     background-color: #d8d8d8;
     text-align: right;
     width: 100%;
     height: 50px;
   }
 
- @media screen and (max-height: 450px) {
+ 
+
+
+
+
+
+/*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
+
+@media all and (min-width: 0px) {
+
+/**********NAVIGATION BAR SMALL DEVICES **********/
+  .sidenav {
+    height: 100%;
+    width:  0;
+    position: fixed;
+    z-index: 1;
+    top:   0;
+    right: 0;
+    background-color: #d8d8d8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+  }
+
+    .sidenav a {
+        padding: 2% 2% 2% 30%;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #fff;
+        display: block;
+        transition: 0.3s
+    }
+
+
+  .closebtn {
+      position: absolute;
+      overflow-x: visible;
+      top: 0;
+      left: 0;
+      padding: 0.2% 3%;
+      background-color: #CCCCCC;
+      border-radius: 10%;
+      font-size: 2em;
+      color: #fff;
+    }
+
+
+  .hamburger-menu {
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.2% 2%;
+    background-color: #CCCCCC;
+    border-radius: 10%;
+  }
+
+@media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
+/*******BODY SMALL DEVICE MAX 320px ******/
+  
+  main {
+      background-color: #efefef;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+  }
+      .welcome {
+        padding: 10%;
+      }
+
+      h3 {
+        color: #b0b0b0;
+      }
+
+      button {
+        padding: 1.5em;
+        border: 1px solid #CECECE;
+        color: #fff;
+        background-color: #d8d8d8;
+        width: 70%; 
+      }
+
+/*******PRODUCT AREA  SMALL DEVICE*********/
+    .product {
+      width: 47%;
+      margin: 0.5%;
+    }
+
+/* FOOTER*/
+
+     .footer-list-wrapper {
+        margin-top: 15%;
+      }
+
+        .list {
+          display: inline-block;
+          list-style: none;
+          margin-bottom: 0;
+        }
+
+  
+}
+
+/*----------------------TABLET MEDIUM DEVICE 780max----------------*/
+@media all and (min-width: 321px) {
+
+  /******** PRODUCT AREA MEDIUM DEVICES********/
+  .product-container {
+    width: 100%;
+  }
+    .product {
+      width: 22%;
+      margin: 1%;
+    }
+
+
+  .footer-list-wrapper {
+        margin-top: 3%;
+      }
+        .about-us-list {
+          display: list-item;
+        }
+
+        .footer-text {
+          padding: 1%;
+        }
+
+}
+
+
+/*-------------------------------DESKTOP VIEW---------------------*/
+@media all and (min-width: 780px) {
 /*********NAVIGATION BAR*************/
 .hamburger-menu {
   display: none;
@@ -31,26 +163,11 @@ html, body {
 /*************BODY*******************/
 
   main {
-    background-color: #efefef;
-    width: 100%;
     text-align: left;
-    font-size: 1rem;
   }
-    .welcome {
-      padding: 10%;
-    }
-
-    h3 {
-      color: #b0b0b0;
-    }
-
     button {
-      padding: 1.5em;
-      background-color: #d8d8d8;
-      color: #fff;
-      
+      width: 25%;
     }
-
 /***************PRODUCT AREA*************/
 
 .product-container {
@@ -97,107 +214,4 @@ footer {
           color: white;
           padding: 3%;
         }
-
-/*----------------------TABLET MEDIUM DEVICE 780max----------------*/
-@media screen and (max-width: 780px) {
-
-  /******** PRODUCT AREA MEDIUM DEVICES********/
-  .product-container {
-    width: 100%;
-  }
-    .product {
-      width: 22%;
-      margin: 1%;
-    }
-
-
-  .footer-list-wrapper {
-        margin-top: 3%;
-      }
-        .about-us-list {
-          display: list-item;
-        }
-
-        .footer-text {
-          padding: 1%;
-        }
-
-}
-
-/*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
-
-@media screen and (max-width: 320px) {
-
-/**********NAVIGATION BAR SMALL DEVICES **********/
-  .sidenav {
-    height: 100%;
-    width:  0;
-    position: fixed;
-    z-index: 1;
-    top:   0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-  }
-
-    .sidenav a {
-        padding: 8px 8px 8px 60px;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: #818181;
-        display: block;
-        transition: 0.3s
-    }
-
-
-    .sidenav .closebtn {
-        position: absolute;
-        top:   0;
-        right: 25;
-        font-size: 2rem;
-        margin-left: 50px;
-    }
-
-  .hamburger-menu {
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 5%;
-  }
-
-
-/*******BODY SMALL DEVICE MAX 320px ******/
-  main {
-    text-align: center;
-  }
-    button {
-      padding: 1.5em;
-      width: 70%; 
-    }
-
-
-/*******PRODUCT AREA  SMALL DEVICE*********/
-    .product {
-      width: 47%;
-      margin: 0.5%;
-    }
-
-
-/* FOOTER*/
-
-
-
-     .footer-list-wrapper {
-        margin-top: 15%;
-      }
-
-        .list {
-          display: inline-block;
-          list-style: none;
-          margin-bottom: 0;
-        }
-
-  
 }
