@@ -1,82 +1,93 @@
-html, body {
-  
-  box-sizing: border-box; 
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  height: 100%;
-  font-size: 16px;
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Master
+  2. html,body
+2. small device 0 to 320px
+  2.1. header
+  2.2. navigation bar
+  2.3. main content
+  2.4. product area
+  2.5. footer
+3. medium device 321 to 780px
+4. large devices 781 to 1280px
+
+-------------------------------------------------------------------*/
+
+html, body { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+    font-size: 16px;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-  .header {
-    position: absolute;
-    background-color: #d8d8d8;
-    text-align: right;
-    width: 100%;
-    height: 50px;
-  }
-
- .wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
- }
-
-
-
+ h3 {
+    color: #b0b0b0;
+      }
 /*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
 
 @media all and (min-width: 0px) {
 
-/**********NAVIGATION BAR SMALL DEVICES **********/
-  .sidenav {
-    height: 100%;
-    width:  0;
-    position: fixed;
-    z-index: 1;
-    top:   0;
-    right: 0;
-    background-color: #d8d8d8;
-    overflow-x: hidden;
-    transition: 0.2s;
-    padding-top: 60px;
-
-  }
-
-    .sidenav a {
-        padding: 2% 10% 2% 30%;
-        text-decoration: none;
-        font-size: 1.5em;
-        color: #fff;
-        display: block;
-        transition: 0.3s
-    }
-
-
-  .closebtn {
+  .header {
       position: absolute;
-      overflow-x: visible;
-      top: 0;
-      left: 0;
-      padding: 0.2% 3%;
-      background-color: #CCCCCC;
-      border-radius: 10%;
-      font-size: 2em;
-      color: #fff;
+      background-color: #d8d8d8;
+      text-align: right;
+      width: 100%;
+      height: 50px;
+  }
+
+    .wrapper {
+        min-height: 100%;
+        margin-bottom: -50px;
     }
 
+/**********NAVIGATION BAR SMALL DEVICES **********/
 
-  .hamburger-menu {
-    font-size: 2em;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.2% 2%;
-    background-color: #CCCCCC;
-    border-radius: 10%;
-  }
+    .sidenav {
+        height: 100%;
+        width:  0;
+        position: fixed;
+        z-index: 1;
+        top:   0;
+        right: 0;
+        background-color: #d8d8d8;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;
+    }
+
+        .sidenav a {
+            padding: 2% 10% 2% 30%;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #fff;
+            display: block;
+            transition: 0.3s
+        }
+
+        .closebtn {
+            position: absolute;
+            overflow-x: visible;
+            top: 0;
+            left: 0;
+            padding: 0.2% 3%;
+            background-color: #CCCCCC;
+            border-radius: 10%;
+            font-size: 2em;
+            color: #fff;
+          }
+
+
+    .hamburger-menu {
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.2% 2%;
+        background-color: #CCCCCC;
+        border-radius: 10%;
+    }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -92,24 +103,20 @@ html, body {
       font-size: 1rem;
   }
       .welcome {
-        padding: 15%;
-      }
-
-      h3 {
-        color: #b0b0b0;
+          padding: 15%;
       }
 
       button {
-        padding: 1.5em;
-        border: 1px solid #CECECE;
-        color: #fff;
-        background-color: #d8d8d8;
-        width: 70%; 
+          padding: 1.5em;
+          border: 1px solid #CECECE;
+          color: #fff;
+          background-color: #d8d8d8;
+          width: 70%; 
       }
 
 /*******PRODUCT AREA  SMALL DEVICE*********/
 
-    .product-container {
+  .product-container {
       width: 100%;
       height: 50%;
       margin-top: 3%;
@@ -117,53 +124,55 @@ html, body {
       display: flex;
       flex-wrap: wrap;
     }
+      .product {
+          width: 47%;
+          height: 150px;
+          margin: 1%;
+          background-color: #efefef;
+      }
 
-    .product {
-      width: 47%;
-      height: 150px;
-      margin: 1%;
-      background-color: #efefef;
-    }
+/* **********FOOTER  SMALL DEVICE ***************/
 
-/* FOOTER*/
+  .push {   /*stick the footer to the bottom of the the screen*/
+      height: 10%;
+  }
 
-    .push {   /*stick the footer to the bottom of the the screen*/
-      height: 60px;
-    }
-
-     footer {
+  footer {
       width: 100%;
-      height: 80px;
+      height: 10%;
       overflow: hidden;
       background-color: #464646;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       border-bottom: 1px solid #979797;
-      border-top: 1px solid #979797;
-      
-    }
-        .footer-list-wrapper {
+      border-top: 1px solid #979797; 
+  }
+      .footer-list-wrapper {
           display: flex;
           flex-wrap: wrap;
-        }
-
+      }
           .footer-list {
-            list-style: none;
-            color: #fff;
+              list-style: none;
+              color: #fff;
           }
 
-  
+  .footer-desktop {
+      display: none;
+  }
+
 }
+
 
 /*----------------------TABLET MEDIUM DEVICE 780max----------------*/
 @media all and (min-width: 321px) {
 
   /*********NAVIGATION BAR***********/
-  .hamburger-menu {
-    display: none;
-  }
 
   .closebtn {
-    display: none;
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: none;
   }
 
   .sidenav {
@@ -174,9 +183,7 @@ html, body {
       text-align: left;
       padding-top: 15px;
       transition: none;
-
     }
-
       .sidenav a {
           margin-top: 15px;
           padding: 0.5em;
@@ -186,51 +193,29 @@ html, body {
           transition: none;   
       }
 
+
   /******** PRODUCT AREA MEDIUM DEVICES********/
   .product-container {
-    width: 100%;
-    
+      width: 100%; 
   }
-    .product {
-      width: 20%;
-      height: 150px;
-      padding: 1%;
-    }
-
-/************FOOTER MEDIUM DEVICES************/
-
-  /*footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 150px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #464646;
-    font-size: 0.8rem;
-    border-bottom: 1px solid #979797;
-    border-top: 1px solid #979797;
-    }
-
-     .footer-list {
-        width: 100%;
-        padding: 0;  */  /*to remove the webkit padding starter*/
-        /*padding-top: 5%;
-        text-align: center;
-        
+      .product {
+          width: 20%;
+          height: 150px;
+          padding: 1%;
       }
-
-        .footer-text {
-          display: inline;
-          color: white;
-          padding: 3%;
-        }*/
 
 }
 
 
 /*-------------------------------DESKTOP VIEW---------------------*/
 @media all and (min-width: 780px) {
+
+ /************ NAVBAR***************/
+
+  .visible-menu {  /*allows margin without disturbing the rest of the layout*/
+      width:75%;
+      margin-left: 14%;
+  }
 
   .sidenav a {
           font-size: 1.2em; 
@@ -239,58 +224,48 @@ html, body {
 /*************BODY*******************/
 
   main {
-    text-align: left;
-    height: 55%;
-    font-size: 1.5rem;
+      text-align: left;
+      height: 55%;
+      font-size: 1.5rem;
   }
+      .welcome {
+          padding-top: 10%;
+      }
 
-    .welcome {
-      padding-top: 10%;
-    }
-
-    button {
-      width: 25%;
-    }
+      button {
+          width: 25%;
+      }
 
 /***************PRODUCT AREA*************/
 
-.product-container {
-    margin: 0 auto;
-   
-  }
-
-    .product {
-      width: 16%;
-      height: 200px;
-      background-color: #efefef;
+  .product-container {
+      margin: 0 auto;
+     
     }
-
-/**************FOOTER******************/
-
-/*footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 150px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #464646;
-    font-size: 0.8rem;
-    border-bottom: 1px solid #979797;
-    border-top: 1px solid #979797;
-    }
-
-     .footer-list {
-        width: 100%;
-        padding: 0;*/    /*to remove the webkit padding starter*/
-        /*padding-top: 5%;
-        text-align: center;
-        
+      .product {
+        width: 16%;
+        height: 200px;
+        background-color: #efefef;
       }
 
-        .footer-text {
+/**************FOOTER******************/
+  .footer-list-wrapper {
+      display: none;
+  }
+
+  .footer-desktop {
+      display: unset;
+  }
+
+  footer {
+      padding-top: 2em;
+      text-align: center;
+  }
+
+      .footer-desktop li {
           display: inline;
-          color: white;
-          padding: 3%;
-        }*/
+          color: #fff;
+          padding:2em;
+          font-size: 1.2em;
+      }
 }

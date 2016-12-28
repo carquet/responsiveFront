@@ -13,11 +13,13 @@
   <!-- Beginning of navigation bar menu sliding from the right -->
     <div id="mySidenav" class="sidenav">
       <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</div>
-      <a href="#">Menu text</a>
-      <a href="#">Menu text</a>
-      <a href="#">Menu text</a>
+        <div class="visible-menu">
+          <a href="#">Menu text</a>
+          <a href="#">Menu text</a>
+          <a href="#">Menu text</a>
+        </div>
     </div> <!-- end of navigation bar menu -->
-      <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
+    <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
   </header> <!-- end of header -->
 
 <!-- main content area -->
@@ -44,43 +46,44 @@
 </div>
 
 <div class="push"></div>
-  </div>
+
 <!-- footer area -->
     <footer>
-      <div class="container footer-list-wrapper">
-        <div class="about">
+        <ul class="footer-desktop">
+              <li>About us </li>
+              <li>About us 2</li>
+              <li>About us 3</li>
+              <li>Extra info 1</li>
+              <li>Extra info 2</li>
+              <li>Extra info 3</li>
+              <li>Contact</li>
+        </ul>
+
+      <div class="footer-list-wrapper">
+        <div class="list-organizer">
           <ul class="footer-list">
             <li class="footer-text">About us 1</li>
             <li class="footer-text">About us 2</li>
             <li class="footer-text">About us 3</li>
           </ul>
         </div>
-        <div class="info">
+        <div class="list-organizer">
           <ul class="footer-list">
             <li class="footer-text">Extra info 1</li>
             <li class="footer-text">Extra info 2</li>
             <li class="footer-text">Extra info 3</li>
           </ul>
         </div>
-        <div class="contact">
+        <div class="list-organizer" id="contact">
           <ul class="footer-list">
             <li class="footer-text">Contact</li>
           </ul>
         </div>
-        </ul>
       </div>
     </footer>
 
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "200px";
-};
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/menu.js"></script>
 
 </body>
 </html>
