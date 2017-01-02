@@ -28,7 +28,7 @@ html, body {
       }
 /*---------------MOBILE FIRST DESIGN SMALL DEVICE MAX WIDTH 320px-------*/
 
-@media all and (min-width: 0px) {
+@media screen and (min-width: 0px) {
 
   .header {
       position: absolute;
@@ -163,7 +163,7 @@ html, body {
 
 
 /*----------------------TABLET MEDIUM DEVICE 780max----------------*/
-@media all and (min-width: 321px) {
+@media screen and (min-width: 321px) {
 
   /*********NAVIGATION BAR***********/
 
@@ -208,7 +208,7 @@ html, body {
 
 
 /*-------------------------------DESKTOP VIEW---------------------*/
-@media all and (min-width: 780px) {
+@media screen and (min-width: 780px) {
 
  /************ NAVBAR***************/
 
