@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans';
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  background-color: #d8d8d8;
+
+}
+
+  ul {
+  padding: 0;
+  }
+
+    li {
+      display: inline;
+      padding: 5%;
+      list-style: none;
+      color: #fff;
+    }
+
+
+@media (min-width: 1200px) {
+  .container .jumbotron {
+
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  /* Home Page */
+  .container .jumbotron {
+
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+
+    height: 432px;
+  }
+  /* End Home Page */
