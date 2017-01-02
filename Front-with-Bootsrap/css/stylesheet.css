@@ -6,6 +6,7 @@ body {
 
 .navbar {
   background-color: #d8d8d8;
+  margin-bottom: 0;
 
 }
 
@@ -20,31 +21,52 @@ body {
       color: #fff;
     }
 
-
-@media (min-width: 1200px) {
-  .container .jumbotron {
-
-    height: 675px;
-  }
+img {
+  margin: 0.2em;
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+
+.openbtn {
+        font-size: 2.4em;
+        color: #fff;
+        cursor: pointer;
+        padding: 0.5% 2%;
+        background-color: #CCCCCC;
+        border-radius: 10%;
+        float: right;
+    }
+    
+  .sidenav {
+      height: 100%;
+      width:  0;
+      position: fixed;
+      z-index: 1;
+      top:   0;
+      right: 0;
+      background-color: #d8d8d8;
+      overflow-x: hidden;
+      transition: 0.2s;
+     
+    }
+      .closebtn {
+            padding: 3% 8%;
+            background-color: #CCCCCC;
+            border-radius: 10%;
+            font-size: 2.5em;
+            color: #fff;
+          }
+
+      .sidenav a {
+          padding: 2% 10% 2% 30%;
+          text-decoration: none;
+          font-size: 1.5em;
+          color: #fff;
+          display: block;
+          transition: 0.3s
+      }
 
 
-  /* Home Page */
-  .container .jumbotron {
-
-    height: 558px;
-  }
-  /* End Home Page */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container .jumbotron {
-
-    height: 432px;
-  }
-  /* End Home Page */

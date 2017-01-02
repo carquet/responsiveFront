@@ -17,16 +17,34 @@
       
   <body>
 <!--   top navabar begins -->
-      <nav class="navbar navbar-default navbar-fixed-top"> 
-        <div class="container">
-          <p class="navbar-text">Menu Text</p>
-          <p class="navbar-text">Menu text</p>
-          <p class="navbar-text">Menu text</p>
-          <p class="navbar-text">Menu text</p>
+    <header>
+    
+      <nav class="navbar navbar-static"> 
+      <div class="container ">
+        <div id="mySidenav" class="sidenav hidden-lg hidden-md">
+          <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+            <div class="visible-menu text-center">
+              <a href="#">Menu text</a>
+              <a href="#">Menu text</a>
+              <a href="#">Menu text</a>
+            </div>
+        </div> <!-- end of navigation bar menu -->
+      <span class="openbtn hidden-lg hidden-md" onclick="openNav()">&#9776;</span>
+     <!--  hamburger menu end -->
+        
+          <ul class="hidden-xs hidden-sm">
+            <p class="navbar-text">Menu Text</p>
+            <p class="navbar-text">Menu text</p>
+            <p class="navbar-text">Menu text</p>
+            <p class="navbar-text">Menu text</p>
+          </ul>
         </div>
       </nav> <!-- end of navbar -->
 
+    </header>  
+
 <!-- jumbotron -->
+
       <main class="jumbotron">
         <div class="container">
           <h1>Hello, my friend to our product</h1>
@@ -39,35 +57,35 @@
       <section class="container-fluid">
         <div class="row">
           <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " alt="Responsive image" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
         <!-- break in lines for desktop view -->
           <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
-            <img class="thumbnail" src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
+            <img class="img-thumbnail img-responsive " src="http://placehold.it/180x140?text=PRODUCT+DISPLAY" alt="...">
           </div>
         </div>
       </section><!--  end of product showcase -->
@@ -91,6 +109,7 @@
        
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/menu.js"></script>
   </body>
 
 </html>
