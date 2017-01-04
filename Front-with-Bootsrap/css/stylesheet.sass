@@ -1,0 +1,105 @@
+//colors
+$white: #fff
+$color_boulder_approx: #797979
+$color_iron_approx: #d8d8d8
+$color_celeste_approx: #cccccc
+
+
+html 
+  color: $white
+  padding-bottom: 70px
+
+body 
+  color: $white
+  padding-bottom: 70px
+
+a 
+  color: $white
+  text-decoration: none
+  &:visited 
+    text-decoration: none
+
+  &:hover 
+    text-decoration: none
+
+  &:active 
+    text-decoration: none
+
+.footer-list 
+  color: $white
+  padding-top: 15px
+
+img 
+  margin: 0.2em
+
+.navbar 
+  background-color: $color_iron_approx
+  margin-bottom: 0
+
+.openbtn 
+  font-size: 2.4em
+  color: $white
+  cursor: pointer
+  padding: 0.5% 2%
+  background-color: $color_celeste_approx
+  float: right
+
+ul 
+  padding: 0
+
+li 
+  display: inline
+  padding: 5%
+  list-style: none
+  color: $white
+
+.sidenav 
+  height: 100%
+  position: fixed
+  z-index: 1
+  top: 0
+  right: 0
+  background-color: $color_iron_approx
+  overflow-x: hidden
+  //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: 0.2s
+  a 
+    padding: 2% 10% 2% 30%
+    text-decoration: none
+    font-size: 1.5em
+    color: $white
+    display: block
+    transition: 0.3s
+.closebtn 
+  position: absolute
+  top: 0
+  right: 0
+  padding: 0 8%
+  background-color: $color_celeste_approx
+  font-size: 2.5em
+  color: $white
+
+@media screen and(max-height: 450px) 
+  .text-center 
+    margin-top: 80px
+
+  .sidenav a 
+    padding: 10px
+
+
+@media screen and(min-width: 992px) 
+  .container 
+    padding-left: 8em
+
+
+@media screen and(max-width: 480px) 
+  .jumbotron 
+    text-align: center
+
+  .btn 
+    width: 75%
+
+
+.jumbotron h1 
+  color: $color_boulder_approx
+  font-size: 2.5rem
