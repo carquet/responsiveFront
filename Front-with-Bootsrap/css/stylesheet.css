@@ -1,119 +1,50 @@
-html, body {
-    color: #fff;
-    padding-bottom: 70px;
- /* font-family and size given by bootstrap*/
+body {
+  font-family: 'Open Sans';
+  color: #fff;
+  padding-bottom: 70px;
 }
 
-  a {
-      color: #fff;
-      text-decoration: none;
-  }
+.navbar {
+  background-color: #d8d8d8;
 
-  a:visited {
-      text-decoration: none;
-  }
-
-  a:hover {
-      text-decoration: none;
-  }
-
-  a:active {
-      text-decoration: none;
-  }
-
-  .footer-list {
-      color: #fff;
-      padding-top: 15px;
-  }
-
-  img {
-      margin: 0.2em;
-  }
-
-  .jumbotron h1 {
-      color: #797979;
-      font-size: 2.5rem;
-  }
-
-  .navbar {
-      background-color: #d8d8d8;
-      margin-bottom: 0;
-  }
-
-    .openbtn {
-        font-size: 2.4em;
-        color: #fff;
-        cursor: pointer;
-        padding: 0.5% 2%;
-        background-color: #CCCCCC;
-        border-radius: 10%;
-        float: right;
-    }
+}
 
   ul {
-      padding: 0;
+  padding: 0;
   }
+
     li {
-        display: inline;
-        padding: 5%;
-        list-style: none;
-        color: #fff;
+      display: inline;
+      padding: 5%;
+      list-style: none;
+      color: #fff;
     }
 
-  .sidenav {
-      height: 100%;
-      position: fixed;
-      z-index: 1;
-      top:   0;
-      right: 0;
-      background-color: #d8d8d8;
-      overflow-x: hidden;
-      transition: 0.2s;
-     
-    }
-      .closebtn {
-          position: absolute;
-          top:0;
-          right: 0;
-              padding: 0% 8%;
-              background-color: #CCCCCC;
-              border-radius: 10%;
-              font-size: 2.5em;
-              color: #fff;
-          }
 
-      .sidenav a {
-          padding: 2% 10% 2% 30%;
-          text-decoration: none;
-          font-size: 1.5em;
-          color: #fff;
-          display: block;
-          transition: 0.3s
-      }
+@media (min-width: 1200px) {
+  .container .jumbotron {
 
-
-      @media screen and (max-height: 450px) {
-          .sidenav a {
-              padding: 10px;
-          }
-          .text-center{
-              margin-top: 80px;
-          }
-      }
-
-
-@media screen and (min-width: 992px){
-    .container { 
-        padding-left: 8em;/*align text with margin of product area*/
-    }
-}
-
-@media screen and (max-width: 480px){
-  .jumbotron{
-      text-align: center;
-  }
-
-  .btn {
-      width: 75%; 
+    height: 675px;
   }
 }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+  /* Home Page */
+  .container .jumbotron {
+
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+
+    height: 432px;
+  }
+  /* End Home Page */
